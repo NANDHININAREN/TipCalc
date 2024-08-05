@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="tips.css" />
+    
+    <title>Tip Calculator</title>
+  </head>
+  <body id="image"style="background-image:url('https://thumbs.dreamstime.com/b/notepad-two-pencils-calculator-yellow-background-notepad-two-pencils-calculator-yellow-background-149270457.jpg');">
+    <div class="cont">
+    <div class="wrapper">
+      <div class="container" id="topContainer">
+
+        <div>
+        <h1 id="tip">Tip Calc</h1>
+          <img id="gif" src="https://i.pinimg.com/originals/f5/f2/fc/f5f2fc5ba52603c5ea602b8202ad529a.gif">
+        </div>
+
+        <div class="title">Bill total</div>
+        <div class="inputContainer">
+          <span>$</span>
+          <input
+            onkeyup="calculateBill()"
+            type="text"
+            id="billTotalInput"
+            placeholder="0.00"
+          />
+        </div>
+      </div>
+      <div class="container">
+        <div class="title">Tip</div>
+        <div class="inputContainer">
+          <span>%</span>
+          <input
+            onkeyup="calculateBill()"
+            type="text"
+            id="tipInput"
+            placeholder="10"
+          />
+        </div>
+      </div>
+      <div class="container" id="bottom">
+        <div class="splitContainer">
+          <div class="title">People</div>
+          <div class="controls">
+            <span class="buttonContainer">
+              <button class="splitButton" onclick="increasePeople()">
+                <span class="buttonText">+</span>
+              </button>
+            </span>
+            <span class="splitAmount" id="numberOfPeople">1</span>
+            <span class="buttonContainer">
+              <button class="splitButton" onclick="decreasePeople()">
+                <span class="buttonText">-</span>
+              </button>
+            </span>
+          </div>
+        </div>
+        <div class="totalContainer">
+          <div class="title">Total per Person</div>
+          <div class="total" id="perPersonTotal">$0.00</div>
+        </div>
+      </div>
+    </div>
+    
+  
+  </div>
+
+  </div>
+    <script type="text/javascript" src="tipss.js"></script>
+  </body>
+</html>
